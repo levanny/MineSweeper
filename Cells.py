@@ -1,7 +1,9 @@
 import tkinter as tk
 from tkinter import Button
+
+
 class Cell:
-    def __init__(self, is_mine = False):
+    def __init__(self, is_mine=False):
         self.is_mine = is_mine
         self.cell_btn_object = None
 
@@ -11,4 +13,3 @@ class Cell:
             text="text"
         )
         self.cell_btn_object = btn
-
