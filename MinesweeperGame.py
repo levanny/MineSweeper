@@ -22,13 +22,18 @@ center_frame = Frame(root, bg='gray', width=Ut.perc_width(88), height=Ut.perc_he
 center_frame.pack(side=LEFT, fill=BOTH)
 
 # Create Cell
-c1 = Cell()
-c1.create_btn_object(center_frame)
-c1.cell_btn_object.grid(row=0, column=0)
+for i in range(St.Grid_Size):
+    for j in range(St.Grid_Size):
+        c = Cell(i, j)
+        c.create_btn_object(center_frame)
+        c.cell_btn_object.grid(row=i, column=j)
 
-c2 = Cell()
-c2.create_btn_object(center_frame)
-c2.cell_btn_object.grid(row=0, column=1)
 
+Cell.randomize_mines()
+
+
+
+
+print(Cell.all)
 
 root.mainloop()
