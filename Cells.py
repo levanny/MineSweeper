@@ -21,6 +21,9 @@ class Cell:
         self.x = x
         self.y = y
         Cell.all.append(self)
+
+
+
     def create_btn_object(self, frame):
         btn = Button(
             frame,
@@ -40,13 +43,8 @@ class Cell:
             cell.is_mine = True
 
 
+
+
+
     def __repr__(self):
         return f"({self.x})({self.y})"
-
-
-
-
-
-
-
-
