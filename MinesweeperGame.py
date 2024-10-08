@@ -28,7 +28,7 @@ for i in range(St.Grid_Size):
         c.create_btn_object(center_frame)
         c.cell_btn_object.grid(row=i, column=j)
 
-#gamarjobak
+#gamarjobakawdwdawd
 Cell.randomize_mines()
 
 

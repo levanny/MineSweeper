@@ -1,4 +1,3 @@
-
 from tkinter import Button
 import random
 import Settings as St
