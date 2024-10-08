@@ -1,7 +1,8 @@
-import tkinter as tk
+
 from tkinter import Button
 import random
 import Settings as St
+
 
 def right_click(event):
     print("right click")
@@ -15,14 +16,13 @@ def left_click(event):
 
 class Cell:
     all = []
+
     def __init__(self, x, y, is_mine=False):
         self.is_mine = is_mine
         self.cell_btn_object = None
         self.x = x
         self.y = y
         Cell.all.append(self)
-
-
 
     def create_btn_object(self, frame):
         btn = Button(
@@ -41,10 +41,6 @@ class Cell:
 
         for cell in picked_cells:
             cell.is_mine = True
-
-
-
-
 
     def __repr__(self):
         return f"({self.x})({self.y})"
